@@ -24,6 +24,11 @@ int main () {
 
     // close the opened file
     outfile.close();
-    // open a file in read mode
     
 }
+
+
+
+
+
+
