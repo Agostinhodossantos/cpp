@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 // first name space
 namespace first_space {
     void func() {
@@ -20,6 +21,8 @@ using namespace first_space;
 int main () {
     // This calls function from first name space
     func();
+
+    cout << "std::endl is used with std!" << std::endl;
 
     return 0;
 }
