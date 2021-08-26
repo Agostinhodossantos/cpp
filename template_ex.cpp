@@ -48,13 +48,22 @@ T Stack<T>::top () const {
 } 
 
 int main() {
-    try
-    {
-        Stack<int> 
-    }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
+      try {
+      Stack<int>         intStack;  // stack of ints 
+      Stack<string> stringStack;    // stack of strings 
+
+      // manipulate int stack 
+      intStack.push(7); 
+      cout << intStack.top() <<endl; 
+
+      // manipulate string stack 
+      stringStack.push("hello"); 
+      cout << stringStack.top() << std::endl; 
+      stringStack.pop(); 
+      stringStack.pop(); 
+   } catch (exception const& ex) { 
+      cerr << "Exception: " << ex.what() <<endl; 
+      return -1;
+   } 
     
 }
